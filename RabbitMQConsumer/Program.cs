@@ -6,6 +6,7 @@ const string Url = "amqp://guest:guest@localhost:5672";
 const string QueueName = "demo-queue";
 SingleConsumer();
 
+// Single Consumer
 void SingleConsumer()
 {
     ConnectionFactory factory = new ConnectionFactory { Uri = new Uri(Url) };
